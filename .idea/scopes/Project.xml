@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="Project" pattern="((!ext:*/||file[MarvelPresentation*]:*//*)&amp;&amp;!file[MarvelPresentation.presentation.androidTest]:*||file[MarvelPresentation.presentation.unitTest]:*/||file[MarvelPresentation.presentation]:*/)&amp;&amp;!file[MarvelPresentation]:gradlew.bat&amp;&amp;!file[MarvelPresentation]:gradlew&amp;&amp;!file[MarvelPresentation]:local.properties&amp;&amp;!file[MarvelPresentation]:.gitignore&amp;&amp;!file[MarvelPresentation.presentation]:.gitignore&amp;&amp;!file[MarvelPresentation]:gradle/wrapper//*&amp;&amp;!file[MarvelPresentation]:detekt/default.detekt.yaml" />
+</component>

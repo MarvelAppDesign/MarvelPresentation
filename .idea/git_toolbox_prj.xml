@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GitToolBoxProjectSettings">
+    <option name="commitDialogBranchCompletionOverride">
+      <BoolValueOverride>
+        <option name="enabled" value="true" />
+        <option name="value" value="true" />
+      </BoolValueOverride>
+    </option>
+    <option name="commitDialogGitmojiCompletionOverride">
+      <BoolValueOverride>
+        <option name="enabled" value="true" />
+      </BoolValueOverride>
+    </option>
+    <option name="commitDialogGitmojiUnicodeCompletionOverride">
+      <BoolValueOverride>
+        <option name="enabled" value="true" />
+      </BoolValueOverride>
+    </option>
+    <option name="commitMessageIssueKeyValidationOverride">
+      <BoolValueOverride>
+        <option name="enabled" value="true" />
+        <option name="value" value="true" />
+      </BoolValueOverride>
+    </option>
+    <option name="commitMessageValidationConfigOverride">
+      <CommitMessageValidationOverride>
+        <option name="enabled" value="true" />
+        <option name="value">
+          <CommitMessageValidationConfig>
+            <option name="regexConfig">
+              <RegexConfig>
+                <option name="expression" value="^(update|feature|fix|perf|docs|style|refactor|test|build|chore|other|internal|revert|release)(?:\((major|minor|patch|test)\))?\s*:[a-z1-9\s#]*[a-z](\n{2}(.|\n)*)?" />
+                <option name="testInput" value="update(test): first approach of java framework&#10;&#10;Summary of the commit:&#10;&#10;- Setup project.&#10;- New settings for project.&#10;- Replace maven, and using gradle dsl with kotlin." />
+              </RegexConfig>
+            </option>
+          </CommitMessageValidationConfig>
+        </option>
+      </CommitMessageValidationOverride>
+    </option>
+    <option name="commitMessageValidationEnabledOverride">
+      <BoolValueOverride>
+        <option name="enabled" value="true" />
+        <option name="value" value="true" />
+      </BoolValueOverride>
+    </option>
+  </component>
+</project>
