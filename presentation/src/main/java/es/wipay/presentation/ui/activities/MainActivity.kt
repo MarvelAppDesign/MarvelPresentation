@@ -2,7 +2,7 @@
  * Copyright (c) 2023.
  */
 
-package es.wipay.presentation
+package es.wipay.presentation.ui.activities
 
 import android.os.Bundle
 import android.view.Menu
@@ -10,10 +10,12 @@ import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.WindowCompat
 import androidx.navigation.findNavController
+import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import com.google.android.material.snackbar.Snackbar
+import es.wipay.presentation.R
 import es.wipay.presentation.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -30,7 +32,8 @@ class MainActivity : AppCompatActivity() {
 
 		setSupportActionBar(binding.toolbar)
 
-		val navController = findNavController(R.id.nav_host_fragment_content_main)
+		val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment_content_main) as NavHostFragment
+		val navController = navHostFragment.navController
 		appBarConfiguration = AppBarConfiguration(navController.graph)
 		setupActionBarWithNavController(navController, appBarConfiguration)
 

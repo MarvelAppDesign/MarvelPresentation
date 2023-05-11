@@ -10,7 +10,7 @@
     app:startDestination="@id/FirstFragment">
 
     <fragment
-        android:name="es.wipay.presentation.fragments.FirstFragment"
+        android:name="es.wipay.presentation.ui.fragments.FirstFragment"
         android:id="@+id/FirstFragment"
         android:label="@string/first_fragment_label"
         tools:layout="@layout/fragment_first">
@@ -20,7 +20,7 @@
             app:destination="@id/SecondFragment" />
     </fragment>
     <fragment
-        android:name="es.wipay.presentation.fragments.SecondFragment"
+        android:name="es.wipay.presentation.ui.fragments.SecondFragment"
         android:id="@+id/SecondFragment"
         android:label="@string/second_fragment_label"
         tools:layout="@layout/fragment_second">

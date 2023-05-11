@@ -2,7 +2,7 @@
  * Copyright (c) 2023.
  */
 
-package es.wipay.presentation.fragments
+package es.wipay.presentation.ui.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater

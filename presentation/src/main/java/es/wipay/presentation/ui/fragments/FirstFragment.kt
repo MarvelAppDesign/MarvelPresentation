@@ -2,15 +2,16 @@
  * Copyright (c) 2023.
  */
 
-package es.wipay.presentation.fragments
+package es.wipay.presentation.ui.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
+import androidx.activity.OnBackPressedCallback
 import androidx.fragment.app.Fragment
-import androidx.navigation.fragment.findNavController
-import es.wipay.presentation.R
+import es.wipay.core.utils.showConfirmationDialogYesNo
 import es.wipay.presentation.databinding.FragmentFirstBinding
 
 /**
@@ -32,13 +33,31 @@ class FirstFragment : Fragment() {
 	override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 		super.onViewCreated(view, savedInstanceState)
 
-		binding.buttonFirst.setOnClickListener {
-			findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
+		oneTapBack()
+		binding.listButton.setOnClickListener {
+			Toast.makeText(context, "Listando elementos...", Toast.LENGTH_SHORT).show()
 		}
 	}
 
 	override fun onDestroyView() {
 		super.onDestroyView()
 		_binding = null
+	}
+
+
+	private fun oneTapBack() {
+		val callback = object : OnBackPressedCallback(true) {
+			override fun handleOnBackPressed() {
+				showConfirmationDialogYesNo(
+					"Salir",
+					"¿Seguro de que quieres salir de la aplicación?",
+					"Salir",
+					"Cancelar",
+					{ requireActivity().finish() }
+				)
+			}
+		}
+
+		requireActivity().onBackPressedDispatcher.addCallback(viewLifecycleOwner, callback)
 	}
 }
