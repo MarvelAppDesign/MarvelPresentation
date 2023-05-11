@@ -9,6 +9,8 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/presentation" />
+            <option value="$PROJECT_DIR$/submodules/MarvelCore/core" />
+            <option value="$PROJECT_DIR$/submodules/MarvelDomain/domain" />
           </set>
         </option>
       </GradleProjectSettings>

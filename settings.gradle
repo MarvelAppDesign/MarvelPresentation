@@ -13,4 +13,6 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "MarvelPresentation"
-include ':presentation'
+include ':presentation', ':domain', ':core'
+project(':domain').projectDir = new File('submodules/MarvelDomain/domain')
+project(':core').projectDir = new File('submodules/MarvelCore/core')

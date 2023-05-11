@@ -4,6 +4,7 @@ plugins {
 }
 
 android {
+    namespace 'es.wipay.presentation'
     compileSdk 33
 
     defaultConfig {
@@ -38,6 +39,11 @@ android {
 
 dependencies {
 
+    // Implementación de los módulos (se podría usar en un futuro jitpack.io, para la implementación de librerías estables)
+    implementation project(':domain')
+    implementation project(':core')
+
+    // Implementación de las librerías externas
     implementation 'androidx.core:core-ktx:1.10.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.9.0'
